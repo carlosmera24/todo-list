@@ -54,7 +54,15 @@ Las dependencias se pueden consultar así:
    CACHE_STORE=file
    ```
 
-6. Ejecutar migraciones y seeds: Esto permitirá crear las tablas de la base de datos definidas en el proyecto:
+6. Generar el API_KEY para el proyecto:
+
+   ```bash
+   php artisan key:generate
+   ```
+
+   > La API_KEY se generará automaticamente en el archivo _.env_
+
+7. Ejecutar migraciones y seeds: Esto permitirá crear las tablas de la base de datos definidas en el proyecto:
    
    ```bash
    php artisan migrate:fresh --seed
